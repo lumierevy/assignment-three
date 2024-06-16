@@ -9,9 +9,11 @@
   <body>
     <!-- navbar -->
     <nav
-      class="flex justify-around mx-auto items-center p-10 w-full border-b-2 fixed z-10 bg-slate-50"
+      class="flex justify-around mx-auto items-center p-4 sm:p-6 md:p-8 w-full fixed z-10"
     >
-      <ul class="flex gap-12 text-xl capitalize">
+      <ul
+        class="flex gap-4 sm:gap-8 md:gap-12 text-sm sm:text-base md:text-xl capitalize"
+      >
         <li class="nav-anchor"><a href="#main">home</a></li>
         <li class="nav-anchor"><a href="#about">about</a></li>
         <li class="nav-anchor"><a href="#tech-stack">tech stack</a></li>
@@ -19,65 +21,81 @@
     </nav>
 
     <!-- main -->
-    <main
-      id="main"
-      class="container grid grid-cols-3 mx-auto p-32 w-full items-center"
-    >
-      <section class="grid col-span-2 mt-10">
-        <div class="">
-          <h1 class="text-8xl mb-14">I'm Yusuf, Computer Science Student🪻</h1>
-          <p class="leading-relaxed">
-            I am passionate about learning new technologies and fullstack
-            development 🚀. I enjoy exploring both front-end and back-end
-            aspects of web development, from designing intuitive user interfaces
-            to implementing robust server-side functionality. My goal is to
-            build comprehensive web applications that provide seamless user
-            experiences and efficient performance🔥
-          </p>
-          <button class="mt-10 border border-purple-500 rounded-xl px-4 py-2">
-            Contact Me
-          </button>
-        </div>
-      </section>
-      <section class="grid col-span-1">
-        <div class="">
-          <img
-            src="./assets/avatar.jpg"
-            alt=""
-            class="object-cover w-[400px] h-[400px] rounded-full mt-10 ml-20"
-          />
-          <div></div>
-        </div>
-      </section>
+    <main id="main" class="container mx-auto p-8 md:p-16 lg:p-32 w-full">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mt-16">
+        <section class="md:col-span-2">
+          <div>
+            <h1 class="text-4xl md:text-6xl lg:text-8xl mb-8 md:mb-14">
+              I'm <span class="text-blue-500">Yusuf</span>, Computer Science
+              Student🪻
+            </h1>
+            <p class="leading-relaxed">
+              I am passionate about learning new technologies and fullstack
+              development 🚀. I enjoy exploring both front-end and back-end
+              aspects of web development, from designing intuitive user
+              interfaces to implementing robust server-side functionality. My
+              goal is to build comprehensive web applications that provide
+              seamless user experiences and efficient performance🔥
+            </p>
+            <button class="mt-8 border border-blue-500 rounded-xl px-4 py-2">
+              Contact Me
+            </button>
+          </div>
+        </section>
+        <section class="hidden md:block md:col-span-1">
+          <div>
+            <img
+              src="./assets/avatar.jpg"
+              alt=""
+              class="object-cover w-full max-w-[400px] h-auto rounded-full mt-10 mx-auto"
+            />
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- about -->
-    <section id="about" class="container mx-auto p-32 w-full">
+    <section
+      id="about"
+      class="container mx-auto px-4 py-16 sm:px-6 md:px-8 lg:px-16 xl:px-32"
+    >
       <div class="">
         <div class="">
-          <h1 class="text-4xl mb-14">About 🌊</h1>
-          <p class="text-xl leading-relaxed">
+          <h1 class="text-3xl sm:text-4xl sm:mb-14">About 🌊</h1>
+          <p class="text-base sm:text-lg md:text-xl leading-relaxed space-y-4">
+            <span class="block mt-4"></span>
+
             Beyond coding, I'm a lifelong learner. The ever-evolving nature of
             technology keeps me on my toes, and I'm always excited to dive into
             new languages, frameworks, or concepts. I actively participate in
             developer communities, attend tech meetups, and occasionally
             contribute to open-source projects. These experiences not only
             enhance my skills but also allow me to connect with like-minded
-            individuals who share my passion. When I'm not immersed in lines of
-            code, you might find me experimenting with new recipes in the
-            kitchen, exploring hiking trails, or losing myself in a good book. I
-            believe in maintaining a healthy work-life balance, as it fuels my
-            creativity and problem-solving abilities. My ultimate goal is to
-            create web solutions that not only meet technical requirements but
-            also provide real value to users. I'm driven by the belief that
-            technology has the power to make positive changes, and I'm committed
-            to using my skills to create impactful and beneficial web
-            applications. I'm always open to new challenges and collaborations.
-            Whether it's a complex web application, an innovative startup idea,
-            or a project aimed at making a difference in the community, I'm
-            ready to bring my skills, enthusiasm, and creative problem-solving
-            approach to the table. Let's connect and create something amazing
-            together!
+            individuals who share my passion.
+
+            <span class="block mt-4"></span>
+
+            When I'm not immersed in lines of code, you might find me
+            experimenting with new recipes in the kitchen, exploring hiking
+            trails, or losing myself in a good book. I believe in maintaining a
+            healthy work-life balance, as it fuels my creativity and
+            problem-solving abilities.
+
+            <span class="block mt-4"></span>
+
+            My ultimate goal is to create web solutions that not only meet
+            technical requirements but also provide real value to users. I'm
+            driven by the belief that technology has the power to make positive
+            changes, and I'm committed to using my skills to create impactful
+            and beneficial web applications.
+
+            <span class="block mt-4"></span>
+
+            I'm always open to new challenges and collaborations. Whether it's a
+            complex web application, an innovative startup idea, or a project
+            aimed at making a difference in the community, I'm ready to bring my
+            skills, enthusiasm, and creative problem-solving approach to the
+            table. Let's connect and create something amazing together!
           </p>
         </div>
         <div></div>
@@ -85,11 +103,16 @@
     </section>
 
     <!-- tech stack -->
-    <section id="tech-stack" class="container mx-auto p-32 w-full">
-      <div class="">
+    <section
+      id="tech-stack"
+      class="container mx-auto px-4 py-6 sm:p-6 md:p-8 lg:p-16 xl:p-32 w-full"
+    >
+      <div class="max-w-7xl">
         <div class="">
-          <h1 class="text-4xl mb-10">Tech Stack 🧑🏻‍💻</h1>
-          <div class="grid grid-cols-3 text-center gap-8">
+          <h1 class="text-3xl sm:text-4xl mb-8 sm:mb-10">Tech Stack 🧑🏻‍💻</h1>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 text-center gap-4 sm:gap-6 md:gap-8"
+          >
             <div
               class="bg-slate-900 rounded-lg h-52 flex items-center justify-center"
             >
@@ -125,5 +148,6 @@
         <div></div>
       </div>
     </section>
+    <script src="main.js"></script>
   </body>
 </html>

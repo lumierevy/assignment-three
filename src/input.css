@@ -7,5 +7,5 @@ html {
 }
 
 .nav-anchor {
-  @apply cursor-pointer;
+  @apply cursor-pointer hover:text-blue-500 font-semibold;
 }
